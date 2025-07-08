@@ -1,0 +1,107 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffe6f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.background-emojis {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+  opacity: 0.2;
+  text-align: center;
+  z-index: 0;
+}
+
+h1 {
+  font-size: 36px;
+  color: #444;
+}
+
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.month {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  width: 220px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.month img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.month button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffccda;
+  cursor: pointer;
+}
+
+.month button:hover {
+  background-color: #ffb6c1;
+}
+
+#modal, #letterModal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#modal img {
+  max-width: 90%;
+  border-radius: 10px;
+}
+
+.letter-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  background-color: #ff99cc;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.letter-button:hover {
+  background-color: #ff6699;
+}
+
+.letter-modal {
+  display: none;
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.letter-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  text-align: left;
+  color: #333;
+}
